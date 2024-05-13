@@ -45,9 +45,12 @@ li em {
   a:hover {
     text-decoration: none;
   }
-
+/*usando ID, usando"#" podemos aplicar a la etiqueta que tenga el valor del atributo ID en este caso prueba. recordar que solo puede haber un ID con undeterminado valor en el documento html*/
+  #prueba{
+    background-color: antiquewhite;
+  }
   /*Combinaciones de selectores y combinadores*/
-  
+
   /* selecciona cualquier elemento <span> que se encuentre dentro de un <p>, que esté dentro de un <artículo> */
 artículo p span { ... }
 
