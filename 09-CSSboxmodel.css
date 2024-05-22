@@ -1,0 +1,42 @@
+/* Reset de estilo para todos los elementos */
+* {
+    margin: 0; /* Elimina los márgenes predeterminados */
+    padding: 0; /* Elimina el relleno (padding) predeterminado */
+    border: 0; /* Elimina cualquier borde predeterminado */
+}
+
+/* Estilo para el elemento header */
+header {
+    padding: 10px; /* Agrega un relleno de 10 píxeles alrededor del contenido del header */
+}
+
+/* Estilo para elementos con la clase logo */
+.logo {
+    display: inline-block; /* Hace que el elemento se comporte como un bloque en línea */
+    width: 10rem; /* Establece el ancho del elemento en 10 rem (unidad relativa basada en el tamaño de la fuente raíz) */
+    border: 2px dashed; /* Aplica un borde punteado de 2 píxeles alrededor del elemento */
+    margin: 5px 0px; /* Añade un margen de 5 píxeles arriba y abajo, y 0 píxeles a los lados */
+}
+
+/* Estilo para el elemento h1 */
+h1 {
+    width: 20%; /* Establece el ancho del h1 al 20% del contenedor */
+    background-color: deepskyblue; /* Establece el color de fondo a azul cielo profundo */
+    color: rgb(255, 255, 255); /* Establece el color del texto a blanco */
+    border-radius: 10px; /* Redondea las esquinas del borde con un radio de 10 píxeles */
+    text-align: center; /* Centra el texto dentro del elemento */
+    border: 1px solid #ebe71b; /* Aplica un borde sólido de 1 píxel de color amarillo claro */
+    padding: 10px; /* Añade un relleno de 10 píxeles alrededor del contenido del h1 */
+    margin: 10px 10px 20px 10px; /* Añade un margen de 10 píxeles arriba, derecha e izquierda, y un margen de 20 píxeles abajo */
+    box-shadow: 5px 5px 5px 2px #ebe71b; /* Aplica una sombra con un desplazamiento de 5 píxeles en X e Y, un desenfoque de 5 píxeles y color amarillo claro */
+    transition: all 0.5s ease-out; /* Aplica una transición suave a todas las propiedades animables durante 0.5 segundos con una curva de desaceleración */
+}
+
+/* Estilo para el elemento h1 en estado hover */
+h1:hover {
+    color: deepskyblue; /* Cambia el color del texto a azul cielo profundo */
+    background-color: #ebe71b; /* Cambia el color de fondo a amarillo claro */
+    border: 1px solid deepskyblue; /* Cambia el borde a 1 píxel sólido de color azul cielo profundo */
+    box-shadow: 5px 5px 5px 2px deepskyblue; /* Cambia la sombra a azul cielo profundo */
+    transition: all 0.5s ease-out; /* Asegura que la transición de los cambios de estilo sea suave y dure 0.5 segundos con una curva de desaceleración */
+}
