@@ -1,0 +1,62 @@
+/* Estilos generales para el cuerpo y el contenedor principal */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5; /* Color de fondo para toda la página */
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff; /* Fondo blanco para el contenedor principal */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para dar un efecto de elevación */
+}
+
+/* Estilos para encabezados */
+h1, h2, h3 {
+  color: #333; /* Color de texto */
+}
+
+h1 {
+  text-align: center; /* Centrar el texto del título principal */
+}
+
+/* Estilos para las secciones */
+section {
+  margin-bottom: 20px; /* Espacio inferior para separar secciones */
+}
+
+/* Estilos para los ejemplos prácticos */
+.example {
+  margin: 20px 0; /* Espacio superior e inferior para separar los ejemplos */
+  padding: 20px; /* Relleno interno */
+  color: #fff; /* Color de texto blanco */
+}
+
+/* Ejemplo 1: Fondo de color */
+.example1 {
+  background-color: #4CAF50; /* Fondo de color verde */
+}
+
+/* Ejemplo 2: Imagen de fondo */
+.example2 {
+  background-image: url('https://via.placeholder.com/800x600'); /* Imagen de fondo */
+  background-repeat: no-repeat; /* No repetir la imagen */
+  background-position: center; /* Centrar la imagen */
+  background-size: cover; /* Escalar la imagen para cubrir todo el contenedor */
+}
+
+/* Ejemplo 3: Bordes estilizados */
+.example3 {
+  border: 5px solid #2196F3; /* Borde sólido azul */
+  border-style: solid dashed dotted double; /* Estilos de borde variados */
+  border-color: red green blue yellow; /* Colores de borde variados */
+}
+
+/* Ejemplo 4: Bordes redondeados */
+.example4 {
+  border: 5px solid #FF5722; /* Borde sólido naranja */
+  border-radius: 15px; /* Bordes redondeados */
+}
