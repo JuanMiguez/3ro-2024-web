@@ -1,60 +1,81 @@
+/* Define la fuente predeterminada para todo el cuerpo del documento */
 body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
+    font-family: Arial, sans-serif; /* Arial es la fuente principal, sans-serif es la fuente de respaldo */
+    margin: 20px; /* Aplica un margen de 20 píxeles alrededor del cuerpo del documento */
 }
+
+/* Estilo para las etiquetas header y footer */
 header, footer {
-    background-color: #f8f9fa;
-    padding: 10px;
-    text-align: center;
+    background-color: #f8f9fa; /* Color de fondo gris claro */
+    padding: 10px; /* Relleno interno de 10 píxeles */
+    text-align: center; /* Centra el texto horizontalmente */
 }
+
+/* Estilo para los títulos h1, h2 y h3 */
 h1, h2, h3 {
-    color: #343a40;
+    color: #343a40; /* Color del texto gris oscuro */
 }
+
+/* Estilo para las listas no ordenadas */
 ul {
-    list-style-type: none;
-    padding: 0;
+    list-style-type: none; /* Elimina los puntos de la lista */
+    padding: 0; /* Elimina el relleno interno */
 }
+
+/* Estilo para los elementos de la lista */
 ul li {
-    background: #e9ecef;
-    margin: 5px 0;
-    padding: 10px;
-    border-radius: 5px;
+    background: #e9ecef; /* Color de fondo gris claro */
+    margin: 5px 0; /* Margen de 5 píxeles arriba y abajo */
+    padding: 10px; /* Relleno interno de 10 píxeles */
+    border-radius: 5px; /* Bordes redondeados con un radio de 5 píxeles */
 }
+
+/* Estilos para contenedores flexibles */
 .flex-container, .flex-container-column, .flex-container-wrap {
-    display: flex;
-    justify-content: space-around;
-    align-items:center;
-    border: 1px solid #ccc;
-    margin-bottom: 20px;
+    display: flex; /* Define un contenedor flexible */
+    justify-content: space-around; /* Distribuye los elementos con espacio igual alrededor */
+    align-items: center; /* Centra los elementos verticalmente */
+    border: 1px solid #ccc; /* Borde de 1 píxel de color gris */
+    margin-bottom: 20px; /* Margen inferior de 20 píxeles */
 }
+
+/* Estilo específico para el contenedor flex-container */
 .flex-container {
-    height: 200px;
+    height: 200px; /* Altura fija de 200 píxeles */
 }
+
+/* Estilo específico para el contenedor flex-container-column */
 .flex-container-column {
-    flex-direction: column;
-    height: 300px;
+    flex-direction: column; /* Organiza los elementos en una columna */
+    height: 300px; /* Altura fija de 300 píxeles */
 }
+
+/* Estilo específico para el contenedor flex-container-wrap */
 .flex-container-wrap {
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en varias líneas */
 }
+
+/* Estilo para los elementos flexibles dentro de los contenedores */
 .flex-item {
-    background-color: #e9ecef;
-    padding: 20px;
-    border: 1px solid #dee2e6;
-    flex: 1;
-    margin: 5px;
-    text-align: center;
+    background-color: #e9ecef; /* Color de fondo gris claro */
+    padding: 20px; /* Relleno interno de 20 píxeles */
+    border: 1px solid #dee2e6; /* Borde de 1 píxel de color gris claro */
+    flex: 1; /* Los elementos se expanden igualmente para llenar el contenedor */
+    margin: 5px; /* Margen de 5 píxeles alrededor */
+    text-align: center; /* Centra el texto horizontalmente */
 }
 
-.flex-item2{
-    background-color: #e9ecef;
-    padding: 20px;
-    border: 1px solid #dee2e6;
-    flex: 2;
-    margin: 5px;
-    text-align: center;
+/* Variación del estilo para elementos flexibles con flexibilidad mayor */
+.flex-item2 {
+    background-color: #e9ecef; /* Color de fondo gris claro */
+    padding: 20px; /* Relleno interno de 20 píxeles */
+    border: 1px solid #dee2e6; /* Borde de 1 píxel de color gris claro */
+    flex: 2; /* Este elemento es dos veces más flexible que los elementos con flex: 1 */
+    margin: 5px; /* Margen de 5 píxeles alrededor */
+    text-align: center; /* Centra el texto horizontalmente */
 }
 
+/* Estilo específico para los elementos flexibles dentro del contenedor flex-container-wrap */
 .flex-container-wrap .flex-item {
-    flex: 1 1 150px;
+    flex: 1 1 150px; /* Los elementos tienen un tamaño flexible inicial de 150 píxeles, pueden crecer y reducirse */
 }
