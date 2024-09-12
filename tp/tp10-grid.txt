@@ -1,0 +1,2 @@
+Crear una pagina web  completa usando el sistema grid. el tema puede ser cualquier que quieran.
+la pagina debe contener etiquetas semanticas para organizar el contenido. al menos las siguientes <header> <nav> <main> <section> <footer>
