@@ -1,90 +1,97 @@
-body{
+/* El cuerpo del documento utiliza un sistema de diseño de cuadrícula (grid) 
+   para organizar el contenido en diferentes áreas del diseño.
+   grid-template-columns: Define una cuadrícula de 6 columnas, cada una con un ancho flexible (fracción 1fr). 
+   grid-template-areas: Crea áreas específicas donde se colocarán los elementos de la página. */
+   body{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas: 
-    "logo logo logo logo logo logo"
-    "prinav prinav prinav prinav prinav prinav"
-    "section1 section1 section2 section2 section3 section3"
-    "social social social social social social"
-    "who who who secnav secnav secnav ";
-    column-gap: 10px;
-    row-gap: 15px;
+    "logo logo logo logo logo logo"    /* Fila para el logo, ocupa toda la fila */
+    "prinav prinav prinav prinav prinav prinav" /* Barra de navegación principal */
+    "section1 section1 section2 section2 section3 section3" /* Tres secciones en dos columnas cada una */
+    "social social social social social social" /* Área para redes sociales */
+    "who who who secnav secnav secnav "; /* Área para información 'who' y una navegación secundaria */
+    column-gap: 10px; /* Espacio entre columnas */
+    row-gap: 15px; /* Espacio entre filas */
 }
 
+/* Estilo para el logo de la página. 
+   Se coloca en el área 'logo' y está centrado horizontal y verticalmente con place-self */
 .logo{
     grid-area: logo;     
     place-self: center;
-    width: 60%;
-    
+    width: 60%; /* Ocupa el 60% del contenedor */
 }
+
+/* Estilo para la imagen dentro del logo.
+   Se ajusta al 15% del ancho del contenedor y se le añade un borde redondeado y una línea */
 .logo img{
     width: 15%;
     border-radius: 50%;
     border: 7px solid black;    
 }
+
+/* Estilo para el título (h1), con tipografía personalizada.
+   Se posiciona con un margen inferior ajustado mediante 'position: relative' y 'bottom'.
+   Además, está centrado y tiene un tamaño de letra muy grande */
 h1{
     display: inline-block;
     position: relative;
     bottom: 2rem;
     font-size: 6rem;
-    font-family: "Pacifico", cursive;
+    font-family: "Pacifico", cursive; /* Tipografía personalizada */
     font-weight: 400;
     font-style: normal;
     margin: 0;
     text-align: center;
 }
 
+/* Área de la navegación principal.
+   Está en la sección 'prinav' del grid y tiene un fondo de color y un borde alrededor */
 .navegacion-principal{
     grid-area: prinav;
     background-color: azure;
     border: 1px solid black;
 }
+
+/* Estilo para los elementos de la lista de la navegación principal.
+   Cada elemento de la lista está dispuesto en línea horizontal */
 .navegacion-principal ul li{
     display: inline;
 }
+
+/* Sección 1, en el área 'section1' del grid principal.
+   Está dividida en subáreas internas utilizando un grid anidado con dos columnas y tres filas */
 .O-tipo1{
     grid-area: section1;
     background-color: azure;
     border: 1px solid black;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr; /* Dos columnas iguales */
     grid-template-rows: auto;
     grid-template-areas:
-    "sheader sheader"
-    "arta artb"
-    "artc artd";
-    column-gap: 10px;
-    row-gap: 10px;
+    "sheader sheader"  /* Cabecera que ocupa el ancho completo */
+    "arta artb"        /* Dos artículos en la segunda fila */
+    "artc artd";       /* Dos artículos en la tercera fila */
+    column-gap: 10px; /* Espacio entre columnas */
+    row-gap: 10px; /* Espacio entre filas */
 }
+
+/* Estilos para los elementos dentro de la sección 1 */
 .sheader{
     grid-area: sheader;
     background-color: lavender;
     border: 1px solid black;
 }
-.arta{
-    grid-area: arta;
-    background-color: lavender;
-    border: 1px solid black;
-}
-.artb{
-    grid-area: artb;
-    background-color: lavender;
-    border: 1px solid black;
-}
-.artc{
-    grid-area: artc;
-    background-color: lavender;
-    border: 1px solid black;
-}
-.artd{
-    grid-area: artd;
+
+.arta, .artb, .artc, .artd{
     background-color: lavender;
     border: 1px solid black;
 }
 
-
-
+/* Las secciones 2 y 3 siguen una estructura similar a la sección 1,
+   con su propio espacio dentro del grid principal y un diseño anidado */
 .O-tipo2{
     grid-area: section2;
     background-color: azure;
@@ -115,18 +122,21 @@ h1{
     row-gap: 10px;
 }
 
+/* Área social, con su propio fondo y borde */
 .social{
     grid-area: social;
     background-color: azure;
     border: 1px solid black;
 }
 
+/* Área de "who", que se coloca al lado de la navegación secundaria en la última fila del grid */
 .who{
     grid-area: who;
     background-color: azure;
     border: 1px solid black;
 }
 
+/* Área de la navegación secundaria */
 .secnav{
     grid-area: secnav;
     background-color: azure;
