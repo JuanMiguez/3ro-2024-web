@@ -1,0 +1,134 @@
+body{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "logo logo logo logo logo logo"
+    "prinav prinav prinav prinav prinav prinav"
+    "section1 section1 section2 section2 section3 section3"
+    "social social social social social social"
+    "who who who secnav secnav secnav ";
+    column-gap: 10px;
+    row-gap: 15px;
+}
+
+.logo{
+    grid-area: logo;     
+    place-self: center;
+    width: 60%;
+    
+}
+.logo img{
+    width: 15%;
+    border-radius: 50%;
+    border: 7px solid black;    
+}
+h1{
+    display: inline-block;
+    position: relative;
+    bottom: 2rem;
+    font-size: 6rem;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    text-align: center;
+}
+
+.navegacion-principal{
+    grid-area: prinav;
+    background-color: azure;
+    border: 1px solid black;
+}
+.navegacion-principal ul li{
+    display: inline;
+}
+.O-tipo1{
+    grid-area: section1;
+    background-color: azure;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "sheader sheader"
+    "arta artb"
+    "artc artd";
+    column-gap: 10px;
+    row-gap: 10px;
+}
+.sheader{
+    grid-area: sheader;
+    background-color: lavender;
+    border: 1px solid black;
+}
+.arta{
+    grid-area: arta;
+    background-color: lavender;
+    border: 1px solid black;
+}
+.artb{
+    grid-area: artb;
+    background-color: lavender;
+    border: 1px solid black;
+}
+.artc{
+    grid-area: artc;
+    background-color: lavender;
+    border: 1px solid black;
+}
+.artd{
+    grid-area: artd;
+    background-color: lavender;
+    border: 1px solid black;
+}
+
+
+
+.O-tipo2{
+    grid-area: section2;
+    background-color: azure;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "sheader sheader"
+    "arta artb"
+    "artc artd";
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.O-tipo3{
+    grid-area: section3;
+    background-color: azure;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "sheader sheader"
+    "arta artb"
+    "artc artd";
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.social{
+    grid-area: social;
+    background-color: azure;
+    border: 1px solid black;
+}
+
+.who{
+    grid-area: who;
+    background-color: azure;
+    border: 1px solid black;
+}
+
+.secnav{
+    grid-area: secnav;
+    background-color: azure;
+    border: 1px solid black;
+}
