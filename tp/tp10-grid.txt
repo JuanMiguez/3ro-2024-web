@@ -1,2 +1,12 @@
 Crear una pagina web  completa usando el sistema grid. el tema puede ser cualquier que quieran.
 la pagina debe contener etiquetas semanticas para organizar el contenido. al menos las siguientes <header> <nav> <main> <section> <footer>
+
+pasos a seguir:
+1.- hacer un croquis (dibujito) de la pagina tambien se le llama mockup a este paso
+2.- armar el html con la estructura del croquis
+3.- poner contenido de prueba en el html
+4.- armar el css usando grid para que cada parte este deonde debe
+5.- seguir poniendo contenido en el html hasta terminar.
+6.- seguir poniendo css para darle forma a la pagina hasta terminar.
+
+nota. ir de apoco iterando (repitiendo) entre 5-6 para ir dandole forma a la pagina
